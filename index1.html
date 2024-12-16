@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="Stylesheet" href="style2.css">
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="index1.html"><img src="Logo.png" class="logo"></a>
+            <input placeholder="Search Anything" class="input">
+            <div class="nav-links">
+                <div class="nav-item">
+                    <a href="#Categories" class="nav-a">Categories</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Human Resourses</a></li>
+                        <li><a href="#">Project Management</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Business Analytics</a></li>
+                    </ul>
+                </div>
+                <a href="#Perks" class="nav-a">Perks</a>
+                <a href="#Review" class="nav-a">Testimonial</a>
+                <a href="#Contact" class="nav-a">Contact</a>    
+            </div>
+            <a href="Login.html"><i class="fa-solid fa-user side" ></i></a>
+            <div class="nav-item">
+                <a href="#"><i class="fa-solid fa-globe side"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Hindi</a></li>
+                    <li><a href="#">Marathi</a></li>
+                </ul>
+            </div> 
+            <i class="fa-solid fa-bars burger"></i>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section home">
+            <div class="home-container container">
+                <div class="home-text">
+                    <h1 class="home-title">Enhance Your <br> Career Growth</h1>
+                    <p class="home-description">Enhance your skills, learn anything. <br>Free and Paid courses are available. <br>Enroll now and learn professional skills.</p>
+                    <a href="" class="button">Explore More</a>
+                </div>
+                <img src="anty-removebg-preview.png">
+            </div>
+        </section>
+
+        <section class="course-view section" id="Categories">
+            <h3 class="section__title">Learn the professional courses with SkillAcad</h3>
+            <div class="tabs">
+                <button class="tablinks" onclick="openTab(event, 'Web')">Web Development</button>
+                <button class="tablinks" onclick="openTab(event, 'HR')">Human Resourses</button>
+                <button class="tablinks" onclick="openTab(event, 'PM')">Project Manager</button>
+                <button class="tablinks" onclick="openTab(event, 'Digital')">Digital Marketing</button>
+                <button class="tablinks" onclick="openTab(event, 'BA')">Business Analytics</button>
+            </div>
+            <div id="Web" class="tabcontent">
+                <div class="card-container ">
+                    <div class="card">
+                        <img src="web1.png">
+                        <div class="text">
+                            <h5>HTML, CSS, Javascript for Web Developers</h5>
+                            <p>Dr. Angela Yu</p>
+                            <span>₹399</span>
+                            <span style="text-decoration: line-through; padding-right: 13px;">₹3,099</span>
+                            <a href="payment.html" class="buy">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="web2.jpeg">
+                        <div class="text">
+                            <h5>IBM Full Stack Developer</h5>
+                            <p>Cott Deltey</p>
+                            <span>₹399</span>
+                            <span style="text-decoration: line-through; padding-right: 13px;">₹3,099</span>
+                            <a href="payment.html" class="buy">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="web3.jpeg">
+                        <div class="text">
+                            <h5>Introduction to Back-end development</h5>
+                            <p>JK Training</p>
+                            <span>₹399</span>
+                            <span style="text-decoration: line-through; padding-right: 13px;">₹3,099</span>
+                            <a href="payment.html" class="buy">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="bar-container">
+                    <h2 class="section__title">Linked IN - Job Openings</h2>
+                    <br>
+                    <h3 class="tech">Web Development</h3><br>
+                    <div class="bar-content"><span class="label">Total</span><div class="bar" style="width: 100%; background-color: hsl(230,62%,85%);"></div><span class="data">26,000</span></div>
+                    <div class="bar-content"><span class="label">Entry</span><div class="bar" style="width: 40%; background-color:  hsl(230,62%,56%);"></div><span class="data">5,000</span></div>
+                    <div class="bar-content"><span class="label">Associate</span><div class="bar" style="width: 26%; background-color: hsl(230,62%,36%);"></div><span class="data">2,000</span></div>
+                    <div class="bar-content"><span class="label">Mid-Senior</span><div class="bar" style="width: 67.7%; background-color: hsl(230,70%,16%);"></div><span class="data">19,000</span></div>
+                </div>
+            </div>
+
+            <div id="HR" class="tabcontent">
+                <div class="card-container">
+                    <div class="card">
+                        <img src="HR1.jpg">
+                        <div class="text">
+                            <h5>Human Resourses Management</h5>
+                            <p>Amber Gould</p>
+                            <span>₹499</span>
+                            <span style="text-decoration: line-through; padding-right: 13px;">₹3,099</span>
+                            <a href="payment.html" class="buy">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="HR2.avif">
+                        <div class="text">
+                            <h5>Generating AI in HR Management</h5>
+                            <p>Abbly Sey</p>
+                            <span>₹499</span>
+                            <span style="text-decoration: line-through; padding-right: 13px;">₹3,099</span>
+                            <a href="payment.html" class="buy">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="HR3.avif">
+                        <div class="text">
+                            <h5>Human Resourses Analytics</h5>
+                            <p>Richard A</p>
+                            <span>₹499</span>
+                            <span style="text-decoration: line-through; padding-right: 13px;">₹3,099</span>
+                            <a href="payment.html" class="buy">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bar-container">
+                    <h2 class="section__title">Linked IN - Job Openings </h2>
+                    <br>
+                    <h3 class="tech">Human Resourses Management</h3><br>
+                    <div class="bar-content"><span class="label">Total</span><div class="bar" style="width: 100%; background-color: hsl(230,62%,85%);"></div><span class="data">3,500</span></div>
+                    <div class="bar-content"><span class="label">Entry</span><div class="bar" style="width: 20%; background-color: hsl(230,62%,56%);"></div><span class="data">1,000</span></div>
+                    <div class="bar-content"><span class="label">Associate</span><div class="bar" style="width: 30%; background-color: hsl(230,62%,36%);"></div><span class="data">5000</span></div>
+                    <div class="bar-content"><span class="label">Mid-Senior</span><div class="bar" style="width: 67.7%; background-color: hsl(230,70%,16%);"></div><span class="data">2,000</span></div>
+                </div>
+                </div>
+
+            <div id="PM" class="tabcontent">
+                <div class="card-container">
+                    <div class="card">
+                        <img src="pg1.jpeg">
+                        <div class="text">
+                            <h5>Foundation of Project Management</h5>
+                            <p>Felipi M.</p>
+                            <span>₹599</span>
+                            <span style="text-decoration: line-through; padding-right: 13px;">₹3,099</span>
+                            <a href="payment.html" class="buy">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="pg2.jpg">
+                        <div class="text">
+                            <h5>Agile Project Management</h5>
+                            <p>Larry W.</p>
+                            <span>₹599</span>
+                            <span style="text-decoration: line-through; padding-right: 13px;">₹3,099</span>
+                            <a href="payment.html" class="buy">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="pg3.jpg">
+                        <div class="text">
+                            <h5>Microsoft Project Management</h5>
+                            <p>Kazimir K</p>
+                            <span>₹599</span>
+                            <span style="text-decoration: line-through; padding-right: 13px;">₹3,099</span>
+                            <a href="payment.html" class="buy">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bar-container">
+                    <h2 class="section__title">Linked IN - Job Openings</h2>
+                    <br>
+                    <h3 class="tech">Project Management</h3><br>
+                    <div class="bar-content"><span class="label">Total</span><div class="bar" style="width: 100%; background-color: hsl(230,62%,85%);"></div><span class="data">2,500</span></div>
+                    <div class="bar-content"><span class="label">Entry</span><div class="bar" style="width: 30%; background-color: hsl(230,62%,56%);"></div><span class="data">318</span></div>
+                    <div class="bar-content"><span class="label">Associate</span><div class="bar" style="width: 26%; background-color: hsl(230,62%,36%);"></div><span class="data">192</span></div>
+                    <div class="bar-content"><span class="label">Mid-Senior</span><div class="bar" style="width: 79.6%; background-color: hsl(230,70%,16%);"></div><span class="data">2,000</span></div>
+                </div>
+            </div>
+
+
+            <div id="Digital" class="tabcontent">
+                <div class="card-container">
+                    <div class="card">
+                        <img src="dg1.jpg">
+                        <div class="text">
+                            <h5>Digital Marketing Strategy and Planning</h5>
+                            <p>Vishal D</p>
+                            <span>₹499</span>
+                            <span style="text-decoration: line-through; padding-right: 13px;">₹3,099</span>
+                            <a href="payment.html" class="buy">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="dg2.png">
+                        <div class="text">
+                            <h5>Introduction to Digital Marketing</h5>
+                            <p>Google Careers</p>
+                            <span>₹499</span>
+                            <span style="text-decoration: line-through; padding-right: 13px;">₹3,099</span>
+                            <a href="payment.html" class="buy">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="dg3.jpg">
+                        <div class="text">
+                            <h5>Foundation of Digtial marketing</h5>
+                            <p>Jay Den</p>
+                            <span>₹499</span>
+                            <span style="text-decoration: line-through; padding-right: 13px;">₹3,099</span>
+                            <a href="payment.html" class="buy">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bar-container">
+                    <h2 class="section__title">Linked IN - Job Openings</h2>
+                    <br>
+                    <h3 class="tech">Digital Marketing</h3><br>
+                    <div class="bar-content"><span class="label">Total</span><div class="bar" style="width: 100%; background-color: hsl(230,62%,85%);"></div><span class="data">14,000</span></div>
+                    <div class="bar-content"><span class="label">Entry</span><div class="bar" style="width: 50%; background-color: hsl(230,62%,56%);"></div><span class="data">8,000</span></div>
+                    <div class="bar-content"><span class="label">Associate</span><div class="bar" style="width: 26%; background-color: hsl(230,62%,36%);"></div><span class="data">1,000</span></div>
+                    <div class="bar-content"><span class="label">Mid-Senior</span><div class="bar" style="width: 38%; background-color: hsl(230,70%,16%);"></div><span class="data">5,000</span></div>
+                </div>
+            </div>
+
+            <div id="BA" class="tabcontent">
+                <div class="card-container">
+                    <div class="card">
+                        <img src="DA1.jpg">
+                        <div class="text">
+                            <h5>Introduction to Data Analytics</h5>
+                            <p>Raj Ahuja</p>
+                            <span>₹799</span>
+                            <span style="text-decoration: line-through; padding-right: 13px;">₹3,099</span>
+                            <a href="payment.html" class="buy">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="DA2.avif">
+                        <div class="text">
+                            <h5>IBM Data Analytics with Power BI</h5>
+                            <p>Steve Ryan</p>
+                            <span>₹799</span>
+                            <span style="text-decoration: line-through; padding-right: 13px;">₹3,099</span>
+                            <a href="payment.html" class="buy">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="DA3.webp">
+                        <div class="text">
+                            <h5>Google Data Analytics with Excel and R</h5>
+                            <p>Abhishek Shani</p>
+                            <span>₹799</span>
+                            <span style="text-decoration: line-through; padding-right: 13px;">₹3,099</span>
+                            <a href="payment.html" class="buy">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bar-container">
+                    <h2 class="section__title">Linked IN - Job Openings </h2>
+                    <br>
+                    <h3 class="tech">Digital Marketing</h3><br>
+                    <div class="bar-content"><span class="label">Total</span><div class="bar" style="width: 100%; background-color: hsl(230,62%,85%);"></div><span class="data">1,200</span></div>
+                    <div class="bar-content"><span class="label">Entry</span><div class="bar" style="width: 40%; background-color: hsl(230,62%,56%);"></div><span class="data">275</span></div>
+                    <div class="bar-content"><span class="label">Associate</span><div class="bar" style="width: 26%; background-color: hsl(230,62%,36%);"></div><span class="data">182</span></div>
+                    <div class="bar-content"><span class="label">Mid-Senior</span><div class="bar" style="width: 50%; background-color: #2A2D34;"></div><span class="data">757</span></div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="stats section" id="Perks">
+            <h3 class="section__title">SkillAcad Perks </h3>
+            <div class="perks grid">
+                <div class="perks-content"><i class="fa-solid fa-tv icon"></i><h3 class="perks-h">Learn at your own pace and schedule</h3> <p class="perks-p">Enjoy the flexibility to study</p></div>
+                <div class="perks-content"><i class="fa-solid fa-chalkboard-user icon"></i><h3 class="perks-h">Monitor your Growth</h3> <p class="perks-p">Track your progress</p></div>
+                <div class="perks-content"><i class="fa-solid fa-lightbulb icon"></i><h3 class="perks-h">Wide range of courses on diverse topics</h3> <p class="perks-p">Choose from an extensive library</p></div>
+                <div class="perks-content"><i class="fa-solid fa-microchip icon"></i><h3 class="perks-h">Certification with Hands-On practice</h3> <p class="perks-p">Practise real-world projects</p></div>
+            </div>
+        </section>
+
+        <section class="trust section ">
+            <h1 class="section__title">We collaborate with 325+ leading universities and companies</h1>
+            <div class="trust-sec" >
+                <img src="amazon.png" style="height: 80px; background-color: transparent">
+                <img src="google.png" style="height: 80px; background-color: transparent">
+                <img src="samsung.png" style="height: 80px; background-color: transparent">
+                <img src="Meta-Logo.png" style="height: 80px; background-color: transparent">
+                <img src="ibm.png" style="height: 80px; background-color: transparent">
+            </div>
+        </section>
+
+
+        <section class="review section" id="Review">
+            <h1 class="section__title">Peoples Review on Learning program</h1>
+            <div class="review-cont">
+                <div class="review_box">
+                    <p>The online program helped me reforce my main tasks as a Leader: <strong>engaging with my team connecting with potential stakeholders</strong></p>
+                    <div class="person">
+                        <div class="r-image"> <img src="p_2.jpeg"> </div>
+                        <div class="r-text">
+                            <p>William C.</p>
+                            <p>Oxford Executive program</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review_box">
+                    <p>This platform gives you the ability to be persistent. I learned exactly what I needed to know in the real world. <strong>It helped me sell myself to get a new role.</strong></p>
+                    <div class="person">
+                        <div class="r-image"> <img src="p_3.jpeg"> </div>
+                        <div class="r-text">
+                            <p>Sam B.</p>
+                            <p>Account Manger at Amazon</p>
+                        </div>
+                    </div>        
+                </div>
+                <div class="review_box">
+                    <p>Web Development program helped me to borden my knowledge with expert teaching and hands-on practice.</p>
+                    <div class="person">
+                        <div class="r-image"> <img src="p_1.jpeg"> </div>
+                        <div class="r-text">
+                            <p>Ishan R</p>
+                            <p>Associate at Accenture</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review_box">
+                    <p>It is a top quality course. Keep going, we need this type of course to improve our studies. Good course and Excellent tutors.</p>
+                    <div class="person">
+                        <div class="r-image"> <img src="p_4.jpeg"> </div>
+                        <div class="r-text">
+                            <p>Jenny S.</p>
+                            <p>Senior Developer</p>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </section>
+
+        <section class="courses-section section">
+            <div class="content container">
+                <h1 class="section__title title_color">Trending Courses</h1>
+                <p class="title_color tred-p">Explore the most popular and in-demand courses to stay ahead in your career.</p>
+                <div class="course-tags">
+                    <a href="#">Generative AI</a>
+                    <a href="#">Data Analysis</a>
+                    <a href="#">Blockchain Technology</a>
+                    <a href="#">Cybersecurity</a>
+                    <a href="#">Cloud Computing</a>
+                    <a href="#">AI for Business</a>
+                    <a href="#">Machine Learning</a>
+                    <a href="#">DevOps</a>
+                    <a href="#">Full Stack Development</a>
+                    <a href="#">Digital Marketing</a>
+                    <a href="#">Leadership & Management</a>
+                    <a href="#">Product Management</a>
+                    <a href="#">UI/UX Design</a>
+                    <a href="#">Python Programming</a>
+                    <a href="#">Business Analytics</a>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="footer " id="Contact">
+        <div class="footer-container container grid">
+            <div>
+                <a href="" class="footer-logo">SkillAcad</a>
+                <p class="footer-description">Learn and explore the best <br> skills</p>
+            </div>
+            <div class="footer-data grid">
+                <div>
+                    <h3 class="footer-title">SkillAcad</h3>
+                    <ul class="footer-links">
+                        <li><a href="" class="footer-link">About</a></li>
+                        <li><a href="" class="footer-link">Career</a></li>
+                        <li><a href="" class="footer-link">Become a Partner</a></li>
+                        <li><a href="" class="footer-link">Social Impact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Community</h3>
+                    <ul class="footer-links">
+                        <li><a href="" class="footer-link">Learners</a></li>
+                        <li><a href="" class="footer-link">Partners</a></li>
+                        <li><a href="" class="footer-link">Beta Testers</a></li>
+                        <li><a href="" class="footer-link">Teaching Center</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">More</h3>
+                    <ul class="footer-links">
+                        <li><a href="" class="footer-link">Terms</a></li>
+                        <li><a href="" class="footer-link">Privacy</a></li>
+                        <li><a href="" class="footer-link">Assessibility</a></li>
+                        <li><a href="" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer-social-link"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer-social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank" class="footer-social-link"><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <span class="footer-copy">&#169; All Rights Reserved By SkillAcad</span>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="Scriptjs.js"></script>
+
+</body>
+</html>

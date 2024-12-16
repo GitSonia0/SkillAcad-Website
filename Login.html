@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKillAcad | Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="Stylesheet" href="Login.css">
+</head>
+<body>
+	<header class="header" id="header"></header>
+        <nav class="nav">
+            <a href="index1.html"><img src="Logo.png" class="logo"></a>
+            <input placeholder="Search Anything" class="input">
+            <div class="nav-links">
+                <div class="nav-item">
+                    <a href="#" class="nav-a">Categories</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Human Resourses</a></li>
+                        <li><a href="#">Project Management</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Business Analytics</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="nav-a">Perks</a>
+                <a href="#" class="nav-a">Testimonial</a>
+                <a href="#" class="nav-a">Contact</a>    
+            </div>
+            <a href="Login.html"><i class="fa-solid fa-user side" ></i></a>
+            <div class="nav-item">
+                <a href="#"><i class="fa-solid fa-globe side"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Hindi</a></li>
+                    <li><a href="#">Marathi</a></li>
+                </ul>
+            </div> 
+            <i class="fa-solid fa-bars burger"></i>
+        </nav>
+    </header>
+	<div class="content">
+        <div class="main">
+            <div class="image">
+            </div>
+            <div class=container>
+                <h1>Login</h1>
+                <div class="input-content">
+                    <label for="user"><input class="box" type="text" name="user" id="user" placeholder="Username"></label>
+                </div>
+                <div class="input-content">
+                    <label for="pass"><input class="box" type="password" name="pass" id="pass" placeholder="Password"></label>
+                </div>
+                <div class="input-content"><input class="btn" type="submit" value="submit"></div>
+                <p>or <a href="#">Forget Password</a></p>
+                <div class="register">
+                    <p>Don't have any account? <a href="Signup.html">Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+
+burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+    </script>
+</body>
+</html>

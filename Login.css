@@ -1,0 +1,291 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Lucida Sans, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --header-height: 3.5rem;
+
+    /* colors */
+    --first-color: hsl(230,62%,56%);
+    --title-color: hsl(230,70%,16%);
+    --text-color: hsl(230,16%,45%);
+    --border-color: hsl(230,50%,90%);
+    --white-color: hsl(0,0%,100%);
+    --body-color:hsl(230,100%,97%);
+    --container-color: hsl(230,100%,97%);
+}
+
+
+
+body{
+    height: 100vh;
+    background-color: rgba(119, 121, 243, 0.438);
+}
+
+.content{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.header{
+    position: sticky;
+    top:0;
+    z-index: 1000;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--body-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+.nav-a{
+    color: var(--title-color);
+}
+.nav-a:hover{
+    color: var(--first-color);
+}
+
+.side{
+    color: var(--title-color);
+}
+
+
+.logo {
+    height: 40px;
+}
+
+.input {
+    height: 25px;
+    border-radius: 20px;
+    padding: 0px 8px;
+}
+
+/* Burger icon */
+.burger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--title-color);
+}
+
+/* Hide the nav links by default on small screens */
+.nav-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+/* Hide the dropdown by default */
+.nav-item {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.dropdown li:last-child {
+    border-bottom: none;
+}
+
+.dropdown li a {
+    padding: 10px 20px;
+    display: block;
+    color: var(--title-color);
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+
+/* Show the dropdown on hover */
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+
+/* Responsive settings */
+@media (min-width: 0px) and (max-width:767px){
+    .nav-links {
+        display: none;
+        position: absolute;
+        text-align: center;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--first-color);
+        padding: 10px;
+    }
+    .nav-a{
+        color: var(--white-color);
+    }
+    .nav-a:hover{
+        color: var(--title-color);
+    }
+
+    .nav-links.active {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .burger {
+        display: block;
+    }
+    .logo {
+        height: 28px;
+    }
+    .input{
+        width: 130px;
+    }
+}
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 50px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 20px;
+    background-color: transparent;
+}
+.image{
+    height: 500px;
+    width: 400px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: url(3d-shape-glowing-with-bright-holographic-colors_23-2151037243.avif);
+    background-size: cover;
+    background-position: top;
+}
+
+.container{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    backdrop-filter: blur(40px);
+    background-color: whitesmoke;
+    height: 500px;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+}
+.input-content{
+    width: 100%;
+    text-align: left;
+    margin: 20px 0px;
+    padding: 20px;
+}
+.box{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(18, 74, 228, 0.322);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.register{
+    margin: 50px;
+}
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(12, 63, 228);
+    color: white;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255, 0.5);
+}
+.btn:hover{
+    background-color: rgb(255, 255, 255, 0.5);
+    color: #4097e7;
+}
+
+@media screen and (min-width:426px) and (max-width:768px){
+    body{
+        margin: 0px 0px;
+    }
+    .main{
+        display: block;
+    }
+    .image{
+        height: 240px;
+        width: 360px;
+        background-size: cover;
+        background-position: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+    }
+    .container{
+        height: 320px;
+        width: 360px;
+        text-align: center;
+        padding: 5px;
+        border-radius: 20px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .input-content{
+        margin: 10px 0px;
+        padding: 10px;
+    }
+    .register{
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:425px){
+    .main{
+        display: block;
+    }
+    .image{
+        height: 200px;
+        width: 300px;
+        background-size: cover;
+        background-position: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+    }
+    .container{
+        height: 330px;
+        width: 300px;
+        text-align: center;
+        padding: 10px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+    }
+    .input-content{
+        margin: 10px 0px;
+        padding: 10px;
+    }
+    .register{
+        margin: 10px;
+    }
+}
